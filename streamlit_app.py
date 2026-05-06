@@ -54,6 +54,14 @@ st.markdown(
     [data-testid="stToolbar"] {display: none;}
     [data-testid="stDecoration"] {display: none;}
     [data-testid="stStatusWidget"] {display: none;}
+    /* Streamlit Cloud bottom badges / profile widgets */
+    .viewerBadge_container__1QSob {display: none !important;}
+    .viewerBadge_link__1S137 {display: none !important;}
+    .viewerBadge_text__1JaDK {display: none !important;}
+    [data-testid="stFloatingButton"] {display: none !important;}
+    [data-testid="stProfile"] {display: none !important;}
+    a[href*="streamlit.io"] {display: none !important;}
+    div[style*="position: fixed"][style*="bottom"] {display: none !important;}
     </style>
     """,
     unsafe_allow_html=True,
