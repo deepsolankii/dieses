@@ -43,14 +43,17 @@ def predict_heart_disease(values):
 
 st.set_page_config(page_title="Heart Disease Predictor", layout="wide")
 
-# Hide footer links like GitHub/creator while keeping Streamlit branding link.
+# Hide Streamlit header/footer and menu.
 st.markdown(
     """
     <style>
-    footer a:not([href*="streamlit.io"]) {
-        display: none !important;
-        visibility: hidden !important;
-    }
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    [data-testid="stHeader"] {display: none;}
+    [data-testid="stToolbar"] {display: none;}
+    [data-testid="stDecoration"] {display: none;}
+    [data-testid="stStatusWidget"] {display: none;}
     </style>
     """,
     unsafe_allow_html=True,
